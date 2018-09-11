@@ -1,0 +1,15 @@
+#body {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+    .topic-btn {
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 20px;
+    }
+
+    #submit-section {
+        float: right;
+    }
