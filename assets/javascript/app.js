@@ -7,7 +7,6 @@ $(document).ready(function () {
 
 // ------------------------Topic Buttons------------------------
     topicBtns();
-    console.log(topics);
 
     function topicBtns() {
         var i;
@@ -16,7 +15,7 @@ $(document).ready(function () {
         };
     };
 
-// ------------------------Add Button NEW BUTTONS DON'T WORK, IF I ADD A SINGLE BUTTON INSTEAD OF REPLACING ALL OF THEM, THE ONE BUTTON DOESN'T WORK------------------------
+// ------------------------Add Button NEW BUTTONS DON'T WORK, IF I ADD A SINGLE BUTTON INSTEAD OF REPLACING ALL OF THEM FROM THE ARRAY, THE ONE BUTTON DOESN'T WORK------------------------
     $("#submitBtn").on("click", function(event) {
         event.preventDefault();
         if ($("#searchbar").val() === "") {
@@ -33,8 +32,6 @@ $(document).ready(function () {
         event.preventDefault();
         var searchTopic = $(this).text();
 
-        console.log(searchTopic);
-        // searchGiphy(); I DON'T KNOW WHY BUT THIS DOESN'T WORK WHEN I USE THE SEARCHGIPHY FUNCTION.
         console.log(searchTopic);
         $("#gifs-section").text("");
 
@@ -81,32 +78,6 @@ $(document).ready(function () {
             $(this).attr("data-state", "still");
         }
     });
-
-    // function searchGiphy() {
-    //     console.log(searchTopic);
-    //     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + searchTopic + "&api_key=4mGgh7cGdcUmQKJk0fJ5K3u5jM49kjTM&limit=10";
-    //     console.log(queryURL);
-    //     $.ajax({
-    //         url: queryURL,
-    //         method: "GET"
-    //     })
-    //         .then(function(response) {
-    //             var results = response.data;
-    //             for (var i = 0; i < results.length; i++) {
-    //                 if (results[i].rating !== "r") {
-    //                     var gifDiv = $("<div>");
-    //                     var rating = results[i].rating;
-    //                     var p = $("<p>").text("Rating: " + rating);
-    //                     var gifElement = $("<img>");
-    //                     gifElement.attr("src", results[i].images.fixed_height.url);
-    //                     gifElement.attr("alt", searchTopic);
-    //                     gifDiv.append(p);
-    //                     gifDiv.append(gifElement);
-    //                     $("#gifs-section").prepend(gifDiv);
-    //                 };
-    //             };
-    //         });
-    // };
 
 // ------------------------------------------------
 });
