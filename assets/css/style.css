@@ -4,12 +4,26 @@
     margin-right: 10px;
     margin-bottom: 20px;
 }
+
+/* ------------------------------------------------ */
     .topic-btn {
         margin-left: 5px;
         margin-right: 5px;
         margin-bottom: 20px;
     }
 
+/* ------------------------------------------------ */
+    #gifs-section {
+        float: left;
+    }
+
+        .gif {
+            margin-bottom: 30px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+/* ------------------------------------------------ */
     #submit-section {
         float: right;
     }
