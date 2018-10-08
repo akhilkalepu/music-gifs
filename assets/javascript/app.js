@@ -16,6 +16,8 @@ $(document).ready(function () {
     };
 
 // ------------------------Add Button NEW BUTTONS DON'T WORK, IF I ADD A SINGLE BUTTON INSTEAD OF REPLACING ALL OF THEM FROM THE ARRAY, THE ONE BUTTON DOESN'T WORK------------------------
+    
+
     $("#submitBtn").on("click", function(event) {
         event.preventDefault();
         if ($("#searchbar").val() === "") {
